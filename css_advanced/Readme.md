@@ -44,18 +44,13 @@ alx-week5/
 
 ##  Getting Started
 
-1. **Clone the repository:**
-     ```bash
-   git clone https://github.com/your-username/alx-week5-frontend.git
-Navigate inside:
+```bash
+# Clone the repo
+git clone https://github.com/Mohamed-Gaber53/alx_html_css.git
+cd css_advanced
 
-
-cd alx-week5
-Open the project:
-
-Launch index.html in your browser
-
-Or use a live server (like live-server) for automatic reloads
+# Open index.html in your browser
+# (or use a local development server like live-server)
 
 Technologies & Assets
 HTML5 — Page structure
@@ -74,4 +69,5 @@ Content: Edit section headings, tutorials, or FAQs in index.html.
 Styling: Tweak colors, hover effects, and layouts using styles.css.
 
 License
+
 This template is shared under the MIT License, perfect for educational use, personal portfolios, or ALX homework.
