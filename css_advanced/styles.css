@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section{
+    background-image: url(./images/Object.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 15px 0;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+header nav, nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 10px;
+    color: #fff;
+    transition: 0.3s;    
+
+}
+
+nav ul li a{
+    color: #fff;
+    padding: 5px 7.5px;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+.main-section{
+margin-top: 150px;
+}
+.main-section .main-div, .learn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-section div h1{
+text-align: center;  
+color: #fff;
+font-size: 120px;
+font-weight: 700;
+
+}
+
+
+.fea {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.main-div button{
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #C271FF;
+    color: #fff;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    padding: 16px 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main-div button:hover{
+    transform: scale(1.2);
+
+}
+
+.learn h2{
+    font-size: 32px;
+    color: #fff;
+    padding-top: 150px;
+}
+.learn h2 span{
+color: #C271FF;
+}
+
+.char {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 25px;              
+    justify-content: center; 
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.char > div{
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 150px; 
+}
+
+
+.char > div:hover {
+    transform: translateY(-8px);
+}
+
+.char img, .testimonial-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.char h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.char p {
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.testimonial{
+    padding: 25px 0;
+    background-color: #C271FF;
+}
+
+
+.testimonial-image{
+    padding-left: 75px;
+}
+
+.testimonial-content{
+    padding-right: 75px;
+}
+.testimonial-content h3{
+    padding-top: 15px;
+}
+.testimonial-content h3, .testimonial-content blockquote, .testimonial-content p{
+color: #fff;
+}
+
+.tutorials {
+    padding: 50px 15px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+
+.tutorials-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #071629;
+    font-weight: 500;
+}
+
+.tutorials-title span{
+    color: #C271FF;
+}
+.tutorials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorial-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.tutorial-card{
+    background-color: #FFFFFF;
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 255px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tutorial-card h3 {
+    font-size: 1.3rem;
+    color: #071629;
+    margin-bottom: 10px;
+}
+
+.tutorial-card .tutorial-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tutorial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tutorial-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tutorial-author h4 {
+    font-size: 1rem;
+    color: #C271FF;
+}
+
+.tutorial-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial-rating:not(:last-child) {
+    color: #C271FF;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.tutorial-rating :last-child{
+    color: #D8D8D8;
+   
+}
+
+.tutorial-duration {
+    font-size: 0.9rem;
+    color: #C271FF;
+}
+
+.membership{
+    background-color: #071629;
+    padding: 60px 15px;
+    text-align: center;
+    
+}
+.membership-title{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.membership-title span{
+    color: #C271FF;
+   
+}
+
+.membership-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+
+}
+.membership-card{
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.membership-card:hover {
+    transform: translateY(-6px);
+}
+
+.membership-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.membership-card h3 {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    font-size: 0.95rem;
+    color: #FFFFFF;
+}
+
+
+.membership-btn {
+    background-color: #C271FF;
+    color: #fff;
+    padding: 22px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership-btn:hover {
+    background-color: #a84cd6;
+}
+
+.faq {
+    padding: 60px 15px;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #071629;
+}
+
+.faq-columns {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-column {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.faq-item {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.faq-answer {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .faq-columns {
+        flex-direction: column;
+    }
+    .faq-column {
+        flex: 1 1 100%;
+    }
+}
+
+footer{
+    background-color: #071629;
+    padding: 25px 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+.footer-logo {
+    max-width: 140px;
+    height: auto;
+}
+
+
+
+.footer-socials {
+    display: flex;    
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+
+.footer-socials i {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.footer-socials i:hover {
+    transform: scale(1.2);
+}
+
+
+
+.footer-copy{
+    color: #d7d7d7;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .footer-container {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-copy {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    header nav, nav{
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    .main-section div h1 {
+        font-size: 75px
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial-image {
+        padding-left: 0;
+    }
+
+    .testimonial-content {
+        padding-right: 75px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 26px;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
