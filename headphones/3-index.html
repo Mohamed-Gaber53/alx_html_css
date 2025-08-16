@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Headphones</title>
+  <link rel="stylesheet" href="3-styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Using Source Sans Pro if available, fallback to system fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="#"><span class="logo-mark"></span> HEADPHONES</a>
+    <nav class="primary-nav" aria-label="primary">
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="mobile-menu">
+        <li><a href="#what">what we do</a></li>
+        <li><a href="#results">our results</a></li>
+        <li><a href="#contact">contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-inner">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p class="kicker">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <a href="#contact" class="btn cta">CALL TO ACTION</a>
+      <p class="lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+  </section>
+</header>
+<main>
+  <section id="what" class="section what">
+    <div class="container">
+      <h2>What we do…</h2>
+      <p class="section-lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="features">
+        <article class="feature">
+          <div class="icon" aria-hidden="true">
+            <!-- Wave / audio icon -->
+            <svg viewBox="0 0 24 24"><path d="M3 12h2m2 0h2m2-6v12m2-9v6m2-3h2m2 0h2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon" aria-hidden="true">
+            <!-- Clapperboard icon -->
+            <svg viewBox="0 0 24 24"><path d="M3 7h18v12H3zM3 7l3-4 5 4M11 7l3-4 5 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon" aria-hidden="true">
+            <!-- Music note icon -->
+            <svg viewBox="0 0 24 24"><path d="M14 3v10.5a3.5 3.5 0 1 1-2-3.15V6l8-3v7.5a3.5 3.5 0 1 1-2-3.15V3z" fill="currentColor"/></svg>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon" aria-hidden="true">
+            <!-- Ear / listen icon -->
+            <svg viewBox="0 0 24 24"><path d="M12 20c0-3 4-3 4-7a4 4 0 1 0-8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="18" r="1.8" fill="currentColor"/></svg>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="results" class="section results">
+    <div class="bg"></div>
+    <div class="container">
+      <h2>Our results speak for themselves</h2>
+      <p class="section-lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="pentagon img">+2%</div>
+          <span>Lorem ipsum dolor</span>
+        </div>
+        <div class="stat">
+          <div class="pentagon img">+2%</div>
+          <span>Lorem ipsum dolor</span>
+        </div>
+        <div class="stat">
+          <div class="pentagon img">+2%</div>
+          <span>Lorem ipsum dolor</span>
+        </div>
+        <div class="stat">
+          <div class="pentagon img">+2%</div>
+          <span>Lorem ipsum dolor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact us</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          <span>Your message</span>
+          <textarea name="message" rows="4" placeholder="Tell us more…"></textarea>
+        </label>
+        <button class="btn cta" type="submit">CALL TO ACTION</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
